@@ -11,7 +11,8 @@ Optimization layers in deep neural networks have gained popularity in structured
 
 Our primary goal is to enhance the transparency of such methods by providing counterfactual explanations of their outputs. To achieve this, we leverage variational autoencoders (VAEs) to obtain meaningful counterfactuals. By operating in the latent space, we establish a natural measure of plausibility for explanations.
 
-![pipeline_vae_last](https://github.com/GermainVivierArdisson/CF-OPT/assets/102970346/ceb76aae-5f09-4513-8b7b-9a324ff74931)
+
+![pipeline_vae_last](https://github.com/GermainVivierArdisson/CF-OPT/assets/102970346/2ab8c2d8-58c2-4f54-80c8-0d06b0126c55)
 *Full pipeline for generating counterfactual explanations of the shortest paths on Warcraft maps structured learning pipeline.*
 
 ## Usage
