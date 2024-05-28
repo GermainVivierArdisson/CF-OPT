@@ -4,6 +4,8 @@ This is the official GitHub repository of the ICML'24 article __CF-OPT: Counterf
 
 Many experimental settings and parts of the code are adapted from the PyEPO repository https://github.com/khalil-research/PyEPO by __Bo Tang__, __Elias B.__ and __Khalil__.
 
+For the shortest paths on Warcraft maps structured learning pipeline, we use [this dataset](https://edmond.mpg.de/dataset.xhtml?persistentId=doi:10.17617/3.YJCQ5S), which was randomly generated from the Warcraft II tileset and used in Vlastelica, Marin, et al. "Differentiation of Blackbox Combinatorial Solvers".
+
 ## Presentation
 Optimization layers in deep neural networks have gained popularity in structured learning, significantly improving the state of the art across various applications. However, these pipelines often lack interpretability due to their composition of two opaque layers: a highly non-linear prediction model (such as a deep neural network) and an optimization layer (typically a complex black-box solver).
 
@@ -35,6 +37,16 @@ Then, install `PyEPO` by running:
 ```
 git clone -b main --depth 1 https://github.com/khalil-research/PyEPO.git
 pip install PyEPO/pkg/.
+```
+
+Next, download the [Warcraft maps dataset](https://edmond.mpg.de/dataset.xhtml?persistentId=doi:10.17617/3.YJCQ5S) and place the 12x12 maps in a new folder named `warcraft_maps` wrapped in another new folder named `data`, so that the code architecture looks like:
+
+```
+>data
+  >warcraft_maps
+    >12x12
+>src
+...
 ```
 
 Finally, clone this repository and run the provided example notebooks to explore counterfactual explanations for structured prediction pipelines.
