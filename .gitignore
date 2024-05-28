@@ -1,0 +1,8 @@
+*~
+*.lp
+*.log
+data/
+logs/
+experiments/
+temp_saves/
+__pycache__/
